@@ -31,7 +31,14 @@
     <application
         android:label="@string/device_settings_app_name"
         android:persistent="true">
-        
+
+        <receiver android:name=".BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
         <activity
             android:name=".DiracActivity"
             android:label="@string/dirac_title"
