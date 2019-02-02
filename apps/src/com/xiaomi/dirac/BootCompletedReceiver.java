@@ -28,7 +28,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(final Context context, Intent intent) { 
-        new DiracUtils(context);
+        new DiracUtils(context).onBootCompleted();
     }
 
 }
