@@ -14,5 +14,8 @@ PRODUCT_PACKAGES += \
     XiaomiDirac \
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.audio.dirac.speaker=true 
-    
+    ro.audio.soundfx.dirac=true \
+    persist.audio.dirac.speaker=true \
+    persist.dirac.acs.controller=qem \
+    persist.dirac.acs.storeSettings=1 \
+    persist.dirac.acs.ignore_error=1
