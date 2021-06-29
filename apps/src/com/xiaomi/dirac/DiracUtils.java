@@ -33,19 +33,11 @@ import java.util.List;
 public final class DiracUtils {
 
     protected DiracSound mDiracSound;
-    private static DiracUtils mInstance;
     private MediaSessionManager mMediaSessionManager;
     private Handler mHandler = new Handler();
     private Context mContext;
     
     private static final String PREF_SETUP_FINISHED = "diracSetupFinishedPref";
-
-    public static DiracUtils getInstance() {
-        if (mInstance == null) {
-            throw new IllegalArgumentException("Trying to get instance without initializing!");
-        }
-        return mInstance;
-    }
 
     public DiracUtils(final Context context) {
         mContext = context;
@@ -64,7 +56,6 @@ public final class DiracUtils {
         }
         mDiracSound.setHeadsetType(mDiracSound.getHeadsetType());
         setLevel(getLevel());
-        mInstance = this;
     }
 
     protected void refreshPlaybackIfNecessary(){
