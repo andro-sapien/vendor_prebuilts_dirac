@@ -42,9 +42,8 @@
 
         <activity
             android:name=".DiracActivity"
-            android:icon="@drawable/ic_dirac"
             android:label="@string/dirac_title"
-            android:theme="@style/Theme.Main">
+            android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
                 <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />

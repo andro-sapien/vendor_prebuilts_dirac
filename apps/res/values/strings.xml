@@ -20,6 +20,7 @@
     <string name="device_settings_app_name">Mi sound</string>
 
     <!-- Dirac settings -->
+    <string name="dirac_enable">Use Mi Sound Enhancer</string>
     <string name="dirac_title">Mi Sound Enhancer</string>
     <string name="dirac_summary">Optimize audio quality</string>
     <string name="dirac_headset_title">Choose headphones type</string>
