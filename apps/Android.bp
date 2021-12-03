@@ -1,0 +1,28 @@
+//
+// Copyright (C) 2017-2018 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app {
+    name: "XiaomiDirac",
+
+    srcs: ["src/**/*.java"],
+
+    certificate: "platform",
+    platform_apis: true,
+    privileged: true,
+
+    static_libs: [
+        "androidx.core_core",
+        "androidx.preference_preference",
+        "org.lineageos.settings.resources",
+    ],
+
+    resource_dirs: ["res"],
+
+    optimize: {
+        proguard_flags_files: ["proguard.flags"],
+    },
+
+}
